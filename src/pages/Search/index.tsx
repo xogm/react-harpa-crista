@@ -56,9 +56,9 @@ function Search() {
               <Badge bg="primary">{getSearchTypeLabel()}</Badge>{" "}
               <Badge bg="secondary">{query}</Badge>{" "}
               <span className="text-muted">
-                {hymns.hymns.length === 0
+                {hymns?.hymns.length === 0
                   ? "Nenhum resultado encontrado"
-                  : `${hymns.hymns.length} hino${hymns.hymns.length !== 1 ? "s" : ""} encontrado${hymns.hymns.length !== 1 ? "s" : ""}`}
+                  : `${hymns?.hymns.length} hino${hymns?.hymns.length !== 1 ? "s" : ""} encontrado${hymns?.hymns.length !== 1 ? "s" : ""}`}
               </span>
             </p>
           </Card.Body>

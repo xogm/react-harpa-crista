@@ -7,6 +7,8 @@ import Pagination from "../../components/Pagination";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
 
+const ITEMS_PER_PAGE = 10;
+
 function Home() {
   const navigate = useNavigate();
   const [hymns, setHymns] = useState<Hymns | null>();
@@ -36,7 +38,7 @@ function Home() {
               Navegue pela coleção completa de hinos da Harpa Cristã
             </p>
             <p className="text-muted mb-0">
-              Total de {hymns.totalPages * 10} hinos disponíveis
+              Total de {hymns.totalPages * ITEMS_PER_PAGE} hinos disponíveis
             </p>
           </Card.Body>
         </Card>
