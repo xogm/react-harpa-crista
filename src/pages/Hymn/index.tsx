@@ -12,11 +12,13 @@ import {
   faHome,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useUserPreferences } from "../../contexts/UserPreferencesContext";
 import "./styles.css";
 
 function Hymn() {
   const { number } = useParams();
   const navigate = useNavigate();
+  const { fontSize } = useUserPreferences();
   const [hymn, setHymn] = useState<HymnResponse | null>(null);
 
   const navigateToHymn = (number: number) => {
@@ -91,7 +93,7 @@ function Hymn() {
               )}
             </ButtonGroup>
           </Col>
-          <Col>
+          <Col className={`hymn-content font-size-${fontSize}`}>
             <h1>
               <Badge bg="dark">{hymn.hymn.number}</Badge> {hymn.hymn.title}
             </h1>

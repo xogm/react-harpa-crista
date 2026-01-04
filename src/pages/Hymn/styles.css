@@ -8,3 +8,56 @@
     font-weight: bold;
     margin-bottom: 1em;
 }
+
+/* Font size variations */
+.hymn-content.font-size-small .verse,
+.hymn-content.font-size-small .chorus {
+    font-size: 1em;
+}
+
+.hymn-content.font-size-medium .verse,
+.hymn-content.font-size-medium .chorus {
+    font-size: 1.2em;
+}
+
+.hymn-content.font-size-large .verse,
+.hymn-content.font-size-large .chorus {
+    font-size: 1.5em;
+}
+
+.hymn-content.font-size-extra-large .verse,
+.hymn-content.font-size-extra-large .chorus {
+    font-size: 1.8em;
+}
+
+.hymn-content.font-size-small h1 {
+    font-size: 1.8rem;
+}
+
+.hymn-content.font-size-medium h1 {
+    font-size: 2rem;
+}
+
+.hymn-content.font-size-large h1 {
+    font-size: 2.5rem;
+}
+
+.hymn-content.font-size-extra-large h1 {
+    font-size: 3rem;
+}
+
+.hymn-content.font-size-small p {
+    font-size: 0.9rem;
+}
+
+.hymn-content.font-size-medium p {
+    font-size: 1rem;
+}
+
+.hymn-content.font-size-large p {
+    font-size: 1.2rem;
+}
+
+.hymn-content.font-size-extra-large p {
+    font-size: 1.4rem;
+}

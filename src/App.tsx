@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Header from "./components/Header";
+import Breadcrumb from "./components/Breadcrumb";
 import Home from "./pages/Home";
 import Hymn from "./pages/Hymn";
 import Search from "./pages/Search";
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header />
       <Container className="py-4">
+        <Breadcrumb />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search/:type/:query" element={<Search />} />
